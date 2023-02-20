@@ -10,7 +10,7 @@ Just download, set permissions and run as admin.
 git clone https://github.com/josh-hanke/build-ffmpeg-with-optional-codecs
 cd build-ffmpeg-with-optional-codecs
 sudo chmod +x build-ffmpeg.sh
-sudo ./build-ffmpeg
+sudo ./build-ffmpeg.sh
 ```
 This script defaults to creating a working directory in your user folder (~/ffmpeg-sources), but ffmpeg is installed as normal. Support for custom locations and automatic cleanup is planned.
 
