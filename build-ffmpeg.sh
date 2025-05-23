@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt -y install autoconf automake build-essential libass-dev libfreetype6-dev libtheora-dev libtool libvorbis-dev pkg-config texinfo zlib1g-dev libfdk-aac-dev libmp3lame-dev yasm
+sudo apt -y install autoconf automake build-essential nasm libass-dev libfreetype6-dev libtheora-dev libtool libvorbis-dev pkg-config texinfo zlib1g-dev libfdk-aac-dev libmp3lame-dev yasm
 mkdir ffmpeg_sources
 cd ffmpeg_sources
 wget http://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
