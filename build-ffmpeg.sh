@@ -24,7 +24,7 @@ tar xjvf ffmpeg-snapshot.tar.bz2
 cd ffmpeg || { echo "Failed to change directory to ffmpeg"; exit 1; }
 
 echo "Configuring FFmpeg for system-wide installation..."
-# Configure FFmpeg to install to /usr/local
+# Configure FFmpeg build with some optional components
 PKG_CONFIG_PATH="/usr/local/lib/pkgconfig" ./configure \
 --prefix="/usr/local" \
 --pkg-config-flags="--static" \
@@ -49,7 +49,7 @@ make install
 echo "Cleaning up build files..."
 make distclean
 
-# Clean up the temporary source directory
+# Clean up the source directory
 echo "Removing temporary source directory: $srcDir"
 cd /
 rm -dR "$srcDir"
