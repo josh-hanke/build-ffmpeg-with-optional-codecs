@@ -1,5 +1,5 @@
 # build-ffmpeg-with-optional-codecs
-A bash script to automatically download and compile FFMPEG with fdkaac and mp3lame on Debian/Ubuntu. I've tested with Kubuntu 22.04, other variants of Ubuntu are untested, so your mileage may vary. Other codecs and distros may be added in the future.
+A bash script to automatically download and compile FFMPEG with fdkaac and mp3lame on Debian/Ubuntu. I've tested with Kubuntu 22.04 and Mint 22, other distros are untested so your mileage may vary.
 
 ### Prerequisits
 None! (I'm pretty sure)
@@ -12,7 +12,7 @@ cd build-ffmpeg-with-optional-codecs
 sudo chmod +x build-ffmpeg.sh
 sudo ./build-ffmpeg.sh
 ```
-This script defaults to creating a working directory in your user folder (~/ffmpeg-sources), but ffmpeg is installed as normal. Support for custom locations and automatic cleanup is planned.
+Defaults to installing to /usr/local, I'm planning on adding an install directory argument at some point in the future.
 
 ### Credits
 
