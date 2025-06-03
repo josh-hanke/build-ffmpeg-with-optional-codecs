@@ -2,7 +2,7 @@
 
 # Ensure the script is run with sudo
 if [ "$EUID" -ne 0 ]; then
-  echo "Please run this script with sudo: sudo ./install_ffmpeg.sh"
+  echo "Please run this script with sudo: sudo ./build_ffmpeg.sh"
   exit 1
 fi
 
@@ -40,7 +40,7 @@ PKG_CONFIG_PATH="/usr/local/lib/pkgconfig" ./configure \
 --enable-gpl
 
 echo "Compiling FFmpeg (this may take a while)..."
-# Use -j$(nproc) to speed up compilation by using all available CPU cores
+# Build using all available CPU cores
 make -j$(nproc)
 
 echo "Installing FFmpeg..."
